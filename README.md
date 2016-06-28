@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/IuryAlves/pyrunes.svg?branch=master)](https://travis-ci.org/IuryAlves/pyrunes)
 
 ## This Module is a translator between runes and they respective latin characters
 
