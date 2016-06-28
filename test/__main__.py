@@ -6,15 +6,17 @@ from __future__ import (
     unicode_literals
 )
 
+import sys
+import unittest
 
-if __name__ == '__main__':
-    import sys
-    import unittest
 
-    from runes import rune_translator
-
+def main():
     tests = unittest.TestLoader().discover("test", "*tests.py")
     result = unittest.TextTestRunner().run(tests)
 
     if not result.wasSuccessful():
         sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()
