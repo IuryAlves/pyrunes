@@ -1,7 +1,7 @@
 language: python
 
 before_script:
-  - pip install tox==1.9.0
+  - pip install -r requirements/testing.txt
 
 script:
   - tox
