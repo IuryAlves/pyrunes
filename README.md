@@ -1,9 +1,9 @@
 
-# This Module a translator between runes and they respective latin characters
+## This Module a translator between runes and they respective latin characters
 
-## Usage
+### Usage
 
-```
+```python
 >>> from runes import to_rune
 >>> print(to_rune('a'))
 ᚠ
@@ -11,10 +11,10 @@
 
 Without the `print`, it will return the rune unicode code.
 
-```
+```python
 >>> to_rune('a')
 u'\u16a8'
-
+```
 
 Not all latin caracter has a respective rune. The table below shows the available runes.
 
@@ -39,6 +39,6 @@ Not all latin caracter has a respective rune. The table below shows the availabl
   | s         |ᛊᛋ     |
   | t         |ᛏ      |
   | u         |ᚢ      |
-  | v         |ᚡ
+  | v         |ᚡ      |
   | w         |ᚹ      |
   | z         |ᛉ      |
