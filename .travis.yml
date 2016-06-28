@@ -4,5 +4,4 @@ before_script:
   - pip install tox==1.9.0
 
 script:
-  - tox --version 
   - tox
