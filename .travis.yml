@@ -1,0 +1,7 @@
+language: python
+
+before_script:
+  - pip install -r requirements/testing.txt
+
+script:
+  - tox
