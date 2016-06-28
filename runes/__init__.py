@@ -5,10 +5,11 @@ from __future__ import (
     unicode_literals
 )
 
-from .rune_translator import to_rune
-from .rune_map import ascii_to_rune
+from .transliterate import to_rune, to_latin
+from .rune_map import runes
 
 __all__ = [
     'to_rune',
-    'ascii_to_rune'
+    'to_latin',
+    'runes'
 ]

@@ -7,10 +7,19 @@ from __future__ import (
 
 
 from unittest import TestCase
-from runes import to_rune
+from runes import to_rune, to_latin
 
 
-class RuneTranslatorTestCase(TestCase):
+class ToLatinTestCase(TestCase):
+
+    def test_latin_a(self):
+        self.assertEqual(to_latin('\u16A8'), 'a')
+
+    def test_latin_r(self):
+        self.assertEqual(to_latin('ᚱ'), 'r')
+
+
+class ToRuneTestCase(TestCase):
 
     def test_rune_f(self):
         self.assertEqual(to_rune('f'), '\u16a0')

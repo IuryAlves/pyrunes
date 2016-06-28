@@ -1,0 +1,2 @@
+-r testing.txt
+bidict==0.1.5
