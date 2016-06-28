@@ -1,9 +1,17 @@
 [![Build Status](https://travis-ci.org/IuryAlves/pyrunes.svg?branch=master)](https://travis-ci.org/IuryAlves/pyrunes)
 [![Coverage Status](https://coveralls.io/repos/github/IuryAlves/pyrunes/badge.svg?branch=master)](https://coveralls.io/github/IuryAlves/pyrunes?branch=master)
 
-## This Module is a translator between runes and they respective latin characters
+
+
+## PyRunes
+
+[![rune snake](rune_snake.jpg)](rune_snake.jpg)
+
+PyRunes is a transliterator between runes and latin chars. It uses de default runic codes present in [unicode](https://en.wikipedia.org/wiki/Runic_(Unicode_block)).
 
 ### Usage
+
+#### To rune
 
 ```python
 >>> from runes import to_rune
@@ -18,30 +26,38 @@ Without the `print`, it will return the rune unicode code.
 u'\u16a8'
 ```
 
+#### From rune
+
+```python
+>>> from runes import to_latin
+>>> to_latin(u'ᚱ')
+'r'
+```
+
 Not all latin caracter has a respective rune. The table below shows the available runes.
 
-  Latin char | Rune  
-  -----------|---------
-   a         |ᚨ      
-   b         |ᛒ      
-   c         |ᚲ      
-   d         |ᛞ      
-   e         |ᛖ      
-   f         |ᚠ
-   g         |ᚷ      
-   h         |ᚺᚻ     
-   i         |ᛁ      
-   l         |ᛚ      
-   k         |ᚲ      
-   m         |ᛗ      
-   n         |ᚾ      
-   o         |ᛟ      
-   p         |ᛈ      
-   r         |ᚱ      
-   s         |ᛊᛋ     
-   t         |ᛏ      
-   u         |ᚢ      
-   v         |ᚡ      
-   w         |ᚹ      
-   z         |ᛉ      
+     Rune    | transliteration
+  -----------|----------------
+   ᚨ         |   a
+   ᛒ         |   b   
+   ᚲ         |   c   
+   ᛞ         |   d   
+   ᛖ         |   e  
+   ᚠ         |   f
+   ᚷ         |   g   
+   ᚺᚻ        |   h  
+   ᛁ         |   i   
+   ᛚ         |   l   
+   ᚲ         |   k   
+   ᛗ         |   m   
+   ᚾ         |   n  
+   ᛟ         |   o 
+   ᛈ         |   p
+   ᚱ         |   r
+   ᛊᛋ        |   s
+   ᛏ         |   t
+   ᚢ         |   u
+   ᚡ         |   v
+   ᚹ         |   w
+   ᛉ         |   z
 
