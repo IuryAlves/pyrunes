@@ -8,6 +8,7 @@ from __future__ import (
 
 ascii_to_rune = {
     "f": "\u16A0",
+    "v": '\u16A1',
     "u": "\u16A2",
     "a": "\u16A8",
     "r": "\u16B1",

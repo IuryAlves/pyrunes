@@ -15,6 +15,9 @@ class RuneTranslatorTestCase(TestCase):
     def test_rune_f(self):
         self.assertEqual(to_rune('f'), '\u16a0')
 
+    def test_rune_v(self):
+        self.assertEqual(to_rune('v'), '\u16a1')
+
     def test_rune_u(self):
         self.assertEqual(to_rune('u'), '\u16A2')
 
