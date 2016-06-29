@@ -23,7 +23,7 @@ class ToRuneTestCase(TestCase):
 
     def test_rune_a_strict(self):
         with self.assertRaises(RuneDoesNotExist):
-            to_rune('j')
+            to_rune('q')
 
     def test_rune_f(self):
         self.assertEqual(to_rune('f'), '\u16a0')
@@ -47,7 +47,7 @@ class ToRuneTestCase(TestCase):
         self.assertEqual(to_rune('k'), '\u16B2')
 
     def test_rune_h(self):
-        self.assertEqual(to_rune('h'), '\u16BA \u16BB')
+        self.assertEqual(to_rune('h'), '\u16BA')
 
     def test_rune_w(self):
         self.assertEqual(to_rune('w'), '\u16B9')
@@ -65,7 +65,7 @@ class ToRuneTestCase(TestCase):
         self.assertEqual(to_rune('z'), '\u16C9')
 
     def test_rune_s(self):
-        self.assertEqual(to_rune('s'), '\u16CA \u16CB')
+        self.assertEqual(to_rune('s'), '\u16CA')
 
     def test_rune_t(self):
         self.assertEqual(to_rune('t'), '\u16CF')

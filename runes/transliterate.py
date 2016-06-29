@@ -5,18 +5,20 @@ from __future__ import (
     unicode_literals
 )
 
-from .rune_map import runes
+from .runic_alphabets import get_alphabet
 from .exceptions import RuneDoesNotExist
 
 
-def to_rune(char, errors='strict'):
+def to_rune(char, runic_alphabet='elder_futhark', errors='strict'):
     if char == 'c':
         # c and k has the same rune
         char = 'k'
+    runes = get_alphabet(runic_alphabet)
     return _get_key(runes, char, errors)
 
 
-def to_latin(rune, errors='strict'):
+def to_latin(rune, runic_alphabet='elder_futhark', errors='strict'):
+    runes = get_alphabet(runic_alphabet)
     return _get_key(runes.inv, rune, errors)
 
 

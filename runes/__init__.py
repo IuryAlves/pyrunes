@@ -6,12 +6,13 @@ from __future__ import (
 )
 
 from .transliterate import to_rune, to_latin
-from .rune_map import runes
+from .runic_alphabets import elder_futhark, get_alphabet
 from .exceptions import RuneDoesNotExist
 
 __all__ = [
     'to_rune',
     'to_latin',
-    'runes',
+    'elder_futhark',
+    'get_alphabet',
     'RuneDoesNotExist'
 ]

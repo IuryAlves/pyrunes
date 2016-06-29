@@ -39,7 +39,7 @@ u'\u16a8'
 The default behavior is to raise an exception if the rune does not exist.
 
 ```python
->>> to_rune("j")
+>>> to_rune("q")
  ...
  runes.exceptions.RuneDoesNotExist: The transliteration of "j" does not exist.
 ```
@@ -47,7 +47,7 @@ The default behavior is to raise an exception if the rune does not exist.
 You can set the `errors` argument  to 'ignore', so instead of raising a exception, it will return an empty string.
 
 ```python
->>> to_rune("j", errors='ignore')
+>>> to_rune("q", errors='ignore')
 u''
 ```
 
@@ -58,25 +58,28 @@ Not all latin caracter has a respective rune. The table below shows the availabl
      Rune    | transliteration
   -----------|----------------
    ᚨ         |   a
+   ᚦ         |   þ
    ᛒ         |   b   
    ᚲ         |   c   
    ᛞ         |   d   
    ᛖ         |   e  
    ᚠ         |   f
    ᚷ         |   g   
-   ᚺᚻ        |   h  
-   ᛁ         |   i   
+   ᚺ         |   h  
+   ᛁ         |   i
+   ᛇ         |   ï 
+   ᛃ         |   j  
    ᛚ         |   l   
    ᚲ         |   k   
    ᛗ         |   m   
-   ᚾ         |   n  
+   ᚾ         |   n
+   ᛜ         |   ng
    ᛟ         |   o 
    ᛈ         |   p
    ᚱ         |   r
-   ᛊᛋ        |   s
+   ᛋ         |   s
    ᛏ         |   t
    ᚢ         |   u
-   ᚡ         |   v
    ᚹ         |   w
    ᛉ         |   z
 
