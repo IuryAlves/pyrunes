@@ -9,10 +9,13 @@ from .runic_alphabets import get_alphabet
 from .exceptions import RuneDoesNotExist
 
 
+def to_runes(chars, runic_alphabet='elder_futhark', errors='strict'):
+    runes = get_alphabet(runic_alphabet)
+    for char in chars:
+        yield _get_key(runes, char, errors)
+
+
 def to_rune(char, runic_alphabet='elder_futhark', errors='strict'):
-    if char == 'c':
-        # c and k has the same rune
-        char = 'k'
     runes = get_alphabet(runic_alphabet)
     return _get_key(runes, char, errors)
 

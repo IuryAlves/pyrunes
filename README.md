@@ -60,7 +60,6 @@ Not all latin caracter has a respective rune. The table below shows the availabl
    ᚨ         |   a
    ᚦ         |   þ
    ᛒ         |   b   
-   ᚲ         |   c   
    ᛞ         |   d   
    ᛖ         |   e  
    ᚠ         |   f

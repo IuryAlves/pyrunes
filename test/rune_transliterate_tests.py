@@ -7,7 +7,19 @@ from __future__ import (
 
 
 from unittest import TestCase
-from runes import to_rune, to_latin, RuneDoesNotExist
+from runes import to_rune, to_latin, to_runes, RuneDoesNotExist
+
+
+class ToRunesTestCase(TestCase):
+
+    def test_to_runes(self):
+        gen = to_runes('vu')
+
+        self.assertEqual(next(gen), '\u16a1')
+        self.assertEqual(next(gen), '\u16A2')
+
+        with self.assertRaises(StopIteration):
+            next(gen)
 
 
 class ToLatinTestCase(TestCase):
@@ -39,9 +51,6 @@ class ToRuneTestCase(TestCase):
 
     def test_rune_r(self):
         self.assertEqual(to_rune('r'), '\u16b1')
-
-    def test_rune_c(self):
-        self.assertEqual(to_rune('c'), '\u16B2')
 
     def test_rune_k(self):
         self.assertEqual(to_rune('k'), '\u16B2')
