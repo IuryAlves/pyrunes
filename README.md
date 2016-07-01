@@ -9,7 +9,23 @@
 
 PyRunes is a transliterator between runes and latin chars. It uses de default runic codes present in [unicode](https://en.wikipedia.org/wiki/Runic_(Unicode_block)).
 
+# Table of contents
+1. [Installing](#installing)
+2. [Usage](#usage)
+3. [Notes and Documentation](#notes_and_documentation)
+4. [Contributing](#contributing)
+
+
+### Installing
+
+<a name="installing"></a>
+
+      pip install pyrunes
+
+
 ### Usage
+
+<a name="usage"></a>
 
 #### To rune
 
@@ -51,9 +67,17 @@ You can set the `errors` argument  to 'ignore', so instead of raising a exceptio
 u''
 ```
 
+### Notes and Documentation
+
+<a name="notes_and_documentation"></a>
+
 #### Notes
 
-Not all latin caracter has a respective rune. The table below shows the available runes.
+* The current supported runic alphabet is [elder_futhark](https://en.wikipedia.org/wiki/Elder_Futhark).
+
+
+* Not all latin caracter has a respective rune. The table below shows the available runes.
+
 
      Rune    | transliteration
   -----------|----------------
@@ -82,3 +106,13 @@ Not all latin caracter has a respective rune. The table below shows the availabl
    ᚹ         |   w
    ᛉ         |   z
 
+
+#### Documentation
+
+See [documentation](DOCUMENTATION.md) # TODO
+
+### Contributing
+
+<a name="contributing"></a>
+
+See the contributing [guide](CONTRIBUTING.md)
