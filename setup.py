@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import re
-
 from setuptools import setup
 
 
@@ -13,4 +11,4 @@ setup(name='pyrunes',
       author_email='iuryalves20@gmail.com',
       packages=['runes'],
       install_requires=["bidict==0.1.5"]
-     )
+      )
