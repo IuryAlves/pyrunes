@@ -109,7 +109,7 @@ u''
 
 #### Documentation
 
-See [documentation](DOCUMENTATION.md) # TODO
+See [documentation](DOCUMENTATION.md)
 
 ### Contributing
 
