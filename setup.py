@@ -16,6 +16,7 @@ def parse_requirements(requirements_file):
 
 setup(name='pyrunes',
       version='0.1',
+      url="https://github.com/IuryAlves/pyrunes",
       description='Transliterate latin characters into runes',
       author='Iury Alves',
       author_email='iuryalves20@gmail.com',
