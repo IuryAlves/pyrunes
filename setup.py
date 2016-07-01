@@ -2,24 +2,15 @@
 
 import re
 
-from distutils.core import setup
-
-
-def parse_requirements(requirements_file):
-    requirements = []
-    with open(requirements_file) as file_:
-        for line in file_:
-            if re.match(r'^\w+==[0-9.]+$', line):
-                requirements.append(line)
-    return requirements
+from setuptools import setup
 
 
 setup(name='pyrunes',
-      version='0.1',
+      version='0.2.0',
       url="https://github.com/IuryAlves/pyrunes",
       description='Transliterate latin characters into runes',
       author='Iury Alves',
       author_email='iuryalves20@gmail.com',
       packages=['runes'],
-      install_requires=parse_requirements("requirements/base.txt")
+      install_requires=["bidict==0.1.5"]
      )

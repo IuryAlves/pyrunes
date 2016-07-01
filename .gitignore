@@ -2,4 +2,7 @@
 .tox
 .coverage
 __pycache__/
+build/
+dist/
+pyrunes.egg-info/
 htmlcov/
