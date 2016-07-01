@@ -7,7 +7,7 @@ from __future__ import (
 
 from .transliterate import to_rune, to_latin, to_runes
 from .runic_alphabets import elder_futhark, get_alphabet
-from .exceptions import RuneDoesNotExist
+from .exceptions import TransliterationDoesNotExist
 
 __all__ = [
     'to_rune',
@@ -15,5 +15,5 @@ __all__ = [
     'to_runes',
     'elder_futhark',
     'get_alphabet',
-    'RuneDoesNotExist'
+    'TransliterationDoesNotExist'
 ]

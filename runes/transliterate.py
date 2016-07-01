@@ -6,7 +6,7 @@ from __future__ import (
 )
 
 from .runic_alphabets import get_alphabet
-from .exceptions import RuneDoesNotExist
+from .exceptions import TransliterationDoesNotExist
 
 
 def to_runes(chars, runic_alphabet='elder_futhark', errors='strict'):
@@ -30,5 +30,5 @@ def _get_key(dic, key, errors='strict'):
         return dic[key]
     except KeyError:
         if errors == 'strict':
-            raise RuneDoesNotExist('The transliteration of "{key}" does not exist.'.format(key=key))
+            raise TransliterationDoesNotExist('The transliteration of "{key}" does not exist.'.format(key=key))
         return ''

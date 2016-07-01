@@ -57,7 +57,7 @@ The default behavior is to raise an exception if the rune does not exist.
 ```python
 >>> to_rune("q")
  ...
- runes.exceptions.RuneDoesNotExist: The transliteration of "j" does not exist.
+ runes.exceptions.TransliterationDoesNotExist: The transliteration of "j" does not exist.
 ```
 
 You can set the `errors` argument  to 'ignore', so instead of raising a exception, it will return an empty string.

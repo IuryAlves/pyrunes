@@ -6,5 +6,5 @@ from __future__ import (
 )
 
 
-class RuneDoesNotExist(Exception):
+class TransliterationDoesNotExist(Exception):
     pass
