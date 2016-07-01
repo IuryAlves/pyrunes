@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/IuryAlves/pyrunes.svg?branch=master)](https://travis-ci.org/IuryAlves/pyrunes)
 [![Coverage Status](https://coveralls.io/repos/github/IuryAlves/pyrunes/badge.svg?branch=master)](https://coveralls.io/github/IuryAlves/pyrunes?branch=master)
-
+[![PyPI version](https://badge.fury.io/py/pyrunes.svg)](https://badge.fury.io/py/pyrunes)
 
 
 ## PyRunes
