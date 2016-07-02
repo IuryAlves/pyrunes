@@ -20,7 +20,7 @@ def to_rune(char, runic_alphabet='elder_futhark', errors='strict'):
     return _get_key(runes, char, errors)
 
 
-def to_latin(rune, runic_alphabet='elder_futhark', errors='strict'):
+def from_rune(rune, runic_alphabet='elder_futhark', errors='strict'):
     runes = get_alphabet(runic_alphabet)
     return _get_key(runes.inv, rune, errors)
 

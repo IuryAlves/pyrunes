@@ -45,8 +45,8 @@ u'\u16a8'
 #### From rune
 
 ```python
->>> from runes import to_latin
->>> to_latin(u'ᚱ')
+>>> from runes import from_rune
+>>> from_rune(u'ᚱ')
 'r'
 ```
 

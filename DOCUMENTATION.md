@@ -3,7 +3,7 @@
 ## Functions 
 
 * [to_rune](#to_rune) returns the rune transliteration of one latin character
-* [to_latin](#to_latin) returns the latin transliteration of one runic character
+* [from_rune](#from_rune) returns the latin transliteration of one runic character
 * [to_runes](#to_runes) yields the rune transliteration of latin characters.
 
 
@@ -30,16 +30,16 @@ is the runic alphabet to use, currently only [elder_futhark](https://en.wikipedi
 * if is set to `ignore`, it will return a empty string if the transliteration does not exist.
 
 
-#### to_latin
-<a name="to_latin"></a>
+#### from_rune
+<a name="from_rune"></a>
 
-`to_latin(rune, runic_alphabet='elder_futhark', errors='strict')`
+`from_rune(rune, runic_alphabet='elder_futhark', errors='strict')`
 
 Returns the latin transliteration of one runic character.
 
 ```python
->>> from runes import to_latin
->>> to_latin('ᚱ')
+>>> from runes import from_rune
+>>> from_rune('ᚱ')
 'r'
 ```
 
