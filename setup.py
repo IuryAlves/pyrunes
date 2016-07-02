@@ -4,7 +4,7 @@ from setuptools import setup
 
 
 setup(name='pyrunes',
-      version='0.2.0',
+      version='0.3.0',
       url="https://github.com/IuryAlves/pyrunes",
       description='Transliterate latin characters into runes',
       author='Iury Alves',
