@@ -7,7 +7,24 @@ from __future__ import (
 
 
 from unittest import TestCase
-from runes import to_rune, from_rune, to_runes, TransliterationDoesNotExist
+from runes import (
+    to_rune,
+    from_rune, from_runes,
+    to_runes,
+    TransliterationDoesNotExist
+)
+
+
+class FromRunesTestCase(TestCase):
+
+    def test_from_runes(self):
+        gen = from_runes('ᚲᚺ')
+
+        self.assertEqual(next(gen), 'k')
+        self.assertEqual(next(gen), 'h')
+
+        with self.assertRaises(StopIteration):
+            next(gen)
 
 
 class ToRunesTestCase(TestCase):
@@ -22,12 +39,12 @@ class ToRunesTestCase(TestCase):
             next(gen)
 
 
-class ToLatinTestCase(TestCase):
+class FromRuneTestCase(TestCase):
 
-    def test_latin_a(self):
+    def test_from_rune_a(self):
         self.assertEqual(from_rune('\u16A8'), 'a')
 
-    def test_latin_r(self):
+    def test_from_rune_r(self):
         self.assertEqual(from_rune('ᚱ'), 'r')
 
 

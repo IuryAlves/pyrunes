@@ -10,19 +10,25 @@ from .exceptions import TransliterationDoesNotExist
 
 
 def to_runes(chars, runic_alphabet='elder_futhark', errors='strict'):
-    runes = get_alphabet(runic_alphabet)
+    runic_alphabet = get_alphabet(runic_alphabet)
     for char in chars:
-        yield _get_key(runes, char, errors)
+        yield _get_key(runic_alphabet, char, errors)
 
 
 def to_rune(char, runic_alphabet='elder_futhark', errors='strict'):
-    runes = get_alphabet(runic_alphabet)
-    return _get_key(runes, char, errors)
+    runic_alphabet = get_alphabet(runic_alphabet)
+    return _get_key(runic_alphabet, char, errors)
+
+
+def from_runes(runes, runic_alphabet='elder_futhark', errors='strict'):
+    runic_alphabet = get_alphabet(runic_alphabet).inv
+    for rune in runes:
+        yield _get_key(runic_alphabet, rune, errors)
 
 
 def from_rune(rune, runic_alphabet='elder_futhark', errors='strict'):
-    runes = get_alphabet(runic_alphabet)
-    return _get_key(runes.inv, rune, errors)
+    runic_alphabet = get_alphabet(runic_alphabet)
+    return _get_key(runic_alphabet.inv, rune, errors)
 
 
 def _get_key(dic, key, errors='strict'):
