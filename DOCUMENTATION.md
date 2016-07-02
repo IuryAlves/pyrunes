@@ -5,7 +5,7 @@
 * [to_rune](#to_rune) returns the rune transliteration of one latin character
 * [to_runes](#to_runes) yields the rune transliteration of latin characters.
 * [from_rune](#from_rune) returns the latin transliteration of one runic character
-* [from_runes](#to_runes) yields the rune transliteration of latin characters.
+* [from_runes](#from_runes) yields the rune transliteration of latin characters.
 
 
 
